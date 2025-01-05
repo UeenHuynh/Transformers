@@ -33,7 +33,7 @@ else:
   `conda install pytorch cpuonly -c pytorch`  
 `conda install -r requirements`  
 3. Clone repo.
-``
+`https://github.com/UeenHuynh/Transformers.git`
 
 ## Usage
 
