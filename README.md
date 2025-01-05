@@ -25,7 +25,7 @@ Table of contents
 
 1. Install Anaconda or Miniconda Package Manager from [here](https://www.anaconda.com/distribution/)
 2. Create a new virtual environment and install packages.  
-`conda create -n transformers python pandas tqdm jupyter`  
+`conda create -n transformers python=3.11.11`  
 `conda activate transformers`  
 If using cuda:  
   `conda install pytorch cudatoolkit=10.0 -c pytorch`  
