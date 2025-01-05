@@ -1,12 +1,3 @@
-This repository is now deprecated. Please use [Simple Transformers](https://github.com/ThilinaRajapakse/simpletransformers) instead.
-
-# Update Notice
-
-The underlying [Pytorch-Transformers](https://github.com/huggingface/pytorch-transformers) library by HuggingFace has been updated substantially since this repo was created. As such, this repo might not be compatible with the current version of the Hugging Face Transformers library. This repo will not be updated further. 
-
-**I recommend using [Simple Transformers](https://github.com/ThilinaRajapakse/simpletransformers) (based on the updated Hugging Face library) as it is regularly maintained, feature rich, as well as (much) easier to use.**
-
-
 # Pytorch-Transformers-Classification
 
 
@@ -21,8 +12,6 @@ Table of contents
 
 <!--ts-->
    * [Setup](#Setup)
-      * [Simple Transformers](#simple-transformers---ready-to-use-library)
-      * [Quickstart using Colab](#quickstart-using-colab)
       * [With Conda](#with-conda)
    * [Usage](#usage)
       * [Yelp Demo](#yelp-demo)
@@ -31,16 +20,6 @@ Table of contents
       * [Evaluation Metrics](#evaluation-metrics)
    * [Acknowledgements](#acknowledgements)
 <!--te-->
-
-## Setup
-
-### Simple Transformers - Ready to use library
-
-If you want to go directly to training, evaluating, and predicting with Transformer models, take a look at the [Simple Transformers](https://github.com/ThilinaRajapakse/simpletransformers) library. It's the easiest way to use Transformers for text classification with only 3 lines of code required. It's based on this repo but is designed to enable the use of Transformers without having to worry about the low level details. However, ease of usage comes at the cost of less control (and visibility) over how everything works.
-
-### Quickstart using Colab
-
-Try this [Google Colab Notebook](colab_quickstart.ipynb) for a quick preview. You can run all cells without any modifications to see how everything works. However, due to the 12 hour time limit on Colab instances, the dataset has been undersampled from 500 000 samples to about 5000 samples. For such a tiny sample size, everything should complete in about 10 minutes.
 
 ### With Conda
 
@@ -52,12 +31,9 @@ If using cuda:
   `conda install pytorch cudatoolkit=10.0 -c pytorch`  
 else:  
   `conda install pytorch cpuonly -c pytorch`  
-`conda install -c anaconda scipy`  
-`conda install -c anaconda scikit-learn`  
-`pip install pytorch-transformers`  
-`pip install tensorboardX`
+`conda install -r requirements`  
 3. Clone repo.
-`git clone https://github.com/ThilinaRajapakse/pytorch-transformers-classification.git`
+``
 
 ## Usage
 
